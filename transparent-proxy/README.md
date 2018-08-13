@@ -96,13 +96,13 @@ This solution setups up one proxy server in AWS global region, one NAT instance 
 
     In AWS China region console (console.amazonaws.cn), select the new nat instance, and disable the source/target check.
 
-    ![disable src/tgt check](images/disable_src_target_check.png)
+    ![disable src/tgt check](./images/disable_src_target_check.png)
 
 4. Configure the routing table for private subnets
 
     Update routing table associated with the private subnets, point the default route to the new nat instance.
 
-    ![update the default route](images/update_default_route.png)
+    ![update the default route](./images/update_default_route.png)
 
 5. verify the setup
 
