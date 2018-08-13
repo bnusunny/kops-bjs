@@ -17,8 +17,8 @@ This solution setups up one proxy server in AWS global region, one NAT instance 
         "server_host": "0.0.0.0",
         "server_port": 8443,
         "password": "change-this-password",
-        "timeout": 60,
-        "method": "chacha20",
+        "timeout": 300,
+        "method": "chacha20-ietf-poly1305",
         "fast_open": false
     }
     ```
@@ -39,7 +39,7 @@ This solution setups up one proxy server in AWS global region, one NAT instance 
 
     In AWS China region (Beijing/Ningxia), in your existing VPC with both private and public subnetes, launch one instance with this AMI (ami-406a7d22). Allow all inbound transfic from you VPC CIDR in security group.
 
-    Login this instance. Update the configuration file with server ip and password in step 1.
+    Login this instance. Update the configuration file /etc/shadowsocks-libev/ss-redir.json with server ip and password in step 1.
 
     ```bash
     {
@@ -48,8 +48,8 @@ This solution setups up one proxy server in AWS global region, one NAT instance 
         "local_address":"0.0.0.0",
         "local_port": 1080,
         "password": "remote-server-password",
-        "timeout": 60,
-        "method": "chacha20",
+        "timeout": 300,
+        "method": "chacha20-ietf-poly1305",
         "fast_open": false
     }
     ```
