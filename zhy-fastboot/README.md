@@ -4,11 +4,11 @@ All scripts for Kops fast bootstrapping in NinXia(cn-northwest-1) region.
 
 ## Usage
 
-1. follow the [README](https://github.com/bnusunny/kops-bjs/blob/master/transparent-proxy/README.md) to build the transparent proxy between NinXia and US. You will need to create two cloudformation stacks - one in U.S. and the other in NinXia.
+1. follow the [README](../transparent-proxy/README.md) to build the transparent proxy between NinXia and US. You will need to create two cloudformation stacks - one in U.S. and the other in NinXia.
 
-2. update your [env.config](https://github.com/bnusunny/kops-bjs/blob/master/zhy-fastboot/env.config)
+2. update your [env.config](./env.config)
 
-3. update your [create cluster script](https://github.com/bnusunny/kops-bjs/blob/master/zhy-fastboot/create_cluster_localmirror.sh), set your `vpcid` correctly and make sure `--ssh-public-key` points to your local SSH public key path. Update <iam-id> in cluster_name with your IAM user ID.
+3. update your [create cluster script](./create_cluster_localmirror.sh), set your `vpcid` correctly and make sure `--ssh-public-key` points to your local SSH public key path. Update <iam-id> in cluster_name with your IAM user ID.
 
 4. run the create script
 
