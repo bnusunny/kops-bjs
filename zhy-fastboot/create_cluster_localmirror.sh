@@ -3,7 +3,7 @@
 source env.config
 
 # change this to your id
-cluster_name='iam-id.zhy.k8s.local'
+cluster_name='<iam-id>.zhy.k8s.local'
 
 # official CoreOS AMI
 #ami='ami-e7958185'
@@ -12,7 +12,6 @@ cluster_name='iam-id.zhy.k8s.local'
 # CoreOS 1800.7.0
 ami='ami-02a5768104b4e8d4c'
 
-# cartechfin settings
 # change this to your vpcid
 vpcid='vpc-1684337f'
 # change this to your private subnet ids
